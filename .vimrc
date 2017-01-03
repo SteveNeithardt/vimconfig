@@ -1,3 +1,15 @@
+" .vimrc file created by Stephen Neithardt (c) 2006 - 2017
+" 
+" It requires the directory .vim to contain the following elements:
+" .vim/functions/FoldText.vim
+" .vim/functions/StatusLine.vim
+" .vim/bash.vim
+" .vim/js.vim
+" .vim/php.vim
+" .vim/vim.vim
+"
+" This list will be kept updated as necessary.
+
 set nocompatible
 set vb
 set nu

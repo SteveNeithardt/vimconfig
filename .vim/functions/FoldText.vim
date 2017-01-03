@@ -1,3 +1,5 @@
+" helper file for .vimrc by Stephen Neithardt (c) 2006 - 2017
+
 :function! FoldText()
 :  let l:winwidth= winwidth(0) - &foldcolumn - (&number ? 8 : 0)
 :  let l:subline = getline(v:foldstart)

@@ -1,3 +1,5 @@
+" helper file for .vimrc by Stephen Neithardt (c) 2006 - 2017
+
 :function! StatusLine()
 :  let l:file = '%<%F'
 :  let l:ff = '[%{&fileformat}] '
