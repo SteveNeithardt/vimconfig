@@ -8,9 +8,29 @@
 " .vim/php.vim
 " .vim/vim.vim
 "
+" As well as the Vundle plugin manager folder
+" .vim/bundle/Vunde.vim/
+"
 " This list will be kept updated as necessary.
 
 set nocompatible
+
+filetype off " required by Vundle
+
+" Vundle setup
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" undo tree plugin
+Plugin 'mbbill/undotree'
+
+call vundle#end()
+" Vundle end setup
+filetype plugin indent on " reset filetype, as Vundle is finished
+
 set vb
 set nu
 set backspace=indent,eol,start
@@ -56,6 +76,8 @@ map <leader>te :tabedit
 map <leader>h :tabprev<CR>
 map <leader>l :tabnext<CR>
  
+" Undo tree (managed by vundle) silent command
+nnoremap <silent> <F4> :UndotreeToggle<CR>
 
 " folding options
 if has("folding")
